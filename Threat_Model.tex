@@ -1,0 +1,10 @@
+\section{Threat Model}
+We have the following three assumptions for our proposed scheme. 
+
+\textbf{Unreachable location for unauthorized users.} In the proposed scheme, physical parameters can only be obtained in a constrained location. Considering a big building, there shall be one or more places protected by physical access controls such as entrance guard in the building. Only when users show their access card to the entrance guard, swipe their access guard, type in their password, or unlock the door using a key, can they get into such places. For authorized users’ convenience, it would be better if authorized users will frequently pass by such places. 
+
+\textbf{Authorized users willing to install an application.} It is necessary for authorized users to install an application on their mobile devices for extracting physical parameters and updating passwords. The application is small enough. We assume authorized users are willing to download and install it using their mobile data traffic. 
+
+\textbf{No attacks except for brute force attack.} We adopt the 802.11i protocol with pre-shared key mode to achieve the authentication between APs and mobile devices. However, the pre-shared key will automatically evolves from time to time. There are several kinds of attacks targeting at the 802.11i protocol with pre-shared key mode. Brute force attack is a very common form as passphrases are easy to guess and stay unchanged for a long time. If attackers successfully guess out passphrases, they are able to join WLAN freely. We assume attackers can conduct a brute force attack on the evolving passwords scheme to get pre-shared keys. 
+
+Except for brute force attack, we assume there is no other attacks on the proposed scheme. We assume authorized users will not install malicious applications stealing passwords. We assume passwords will be distributed in a secure channel and attackers cannot eavesdrop. We also assume the 802.11i protocol is secure enough to prevent attackers from connecting to APs without passphrases and pre-shared keys. 
