@@ -1,0 +1,14 @@
+* TLS,PEAP,TTLS
+"test" TLS,MSCHAPV2,GTC,TTLS-PAP,TTLS-CHAP,TTLS-MSCHAP,TTLS-MSCHAPV2,MD5 "123abc" [2]
+
+# Phase 1 users
+# * PEAP
+
+#"test1" PEAP
+
+#"test2" FAST
+# Phase 2
+
+#"test1" MSCHAPV2 "test123" [2]
+
+#"test2" MSCHAPV2 "test123" [2]
